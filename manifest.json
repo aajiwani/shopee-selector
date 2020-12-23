@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Shopee Selector",
+    "version": "0.1",
+    "icons": {
+      "48": "img/shopee.png"
+    },
+    "permissions": [ "webNavigation", "*://*/*" ],
+    "description": "Adds ability to shortlist shopee items for various usages",
+    "content_scripts": [
+      {
+        "matches": ["*://*.shopee.com.my/*"],
+        "js": ["shortlist.js"]
+      }
+    ]
+  }
